@@ -643,7 +643,7 @@
         "https://bootstraptemple.com/files/icons/orion-svg-sprite.svg"
       );
       const apiEndpointUrl =
-        "http://172.104.76.206:8000/api/Religio/HomeSections/OurClient/list";
+        "https://dummy.restapiexample.com/api/v1/employees";
 
       fetch(apiEndpointUrl)
         .then((response) => response.json())
@@ -657,14 +657,14 @@
             itemDiv.classList.add("col-lg-4");
             itemDiv.innerHTML = `
             <div class="overlay-content">
-              <img class="img-fluid w-100" src="https://religioapp.cristoerp.com/Ourclient/logo/${item.logo}" alt="..." />
+            
             </div>
             <h4 class="mb-0">
-              <a class="reset-anchor" href="text.html">${item.prname}</a>
+              <a class="reset-anchor" href="text.html">${item.employee_name}</a>
             </h4>
-            <p class="text-serif text-primary text-small">${item.crname}</p>
+            <p class="text-serif text-primary text-small">${item.employee_salary}</p>
             <p class="text-muted">
-              ${item.cgname}
+              ${item.employee_age}
             </p>
              `;
             dataContainer.appendChild(itemDiv);
