@@ -643,7 +643,7 @@
         "https://bootstraptemple.com/files/icons/orion-svg-sprite.svg"
       );
       const apiEndpointUrl =
-        "https://dummy.restapiexample.com/api/v1/employees";
+        "https://masspayments.shrinebasilicabangalore.org/api/testapi";
 
       fetch(apiEndpointUrl)
         .then((response) => response.json())
@@ -660,11 +660,11 @@
             
             </div>
             <h4 class="mb-0">
-              <a class="reset-anchor" href="text.html">${item.employee_name}</a>
+              <a class="reset-anchor" href="text.html">${item.id}</a>
             </h4>
-            <p class="text-serif text-primary text-small">${item.employee_salary}</p>
+            <p class="text-serif text-primary text-small">${item.name}</p>
             <p class="text-muted">
-              ${item.employee_age}
+              ${item.email}
             </p>
              `;
             dataContainer.appendChild(itemDiv);
